@@ -3,15 +3,24 @@
 <head>
 	<title>Menu Principal</title>
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptar.css">
 </head>
-<body bgcolor="#eeeeee">
+<body bgcolor="#F0F3F4">
+	<nav class="white">
+		<span class="brand-logo cyan-text">IPS</span>
+		<ul>
+			<li class="right"><a class="cyan-text" href="#"><i class="material-icons">account_circle</i></a></li>
+		</ul>
+	</nav>
+
 	<ul class="side-nav fixed">
 		<li>
 			<div class="userView">
-				<img class="background" src="img/navBarFondo.jpg">
+				<img class="background" src="img/navBarFondo.png">
 				<img class="circle responsive-img" src="img/user.jpg">
-				<span class="name white-text">Samir Miranda</span>
+				<span class="name white-text">Medico <br>Samir Miranda</span>
 				<span class="email white-text">saanm2@gmail.com</span>
 			</div>
 		</li>
@@ -19,8 +28,45 @@
 		<li class="divider"></li>
 		<li><a href="#!"><i class="material-icons left">remove</i> Salir</a></li>
 	</ul>
+
+	<div class="carousel carousel-slider">
+				<a class="carousel-item"><img src="http://3.bp.blogspot.com/_EZ16vWYvHHg/TP-8TCqRW6I/AAAAAAAAUc0/W1Da1VhmG-A/
+				s1600/www.FOTOFRONTERA.com%2B%2528pa1sajes%2529.jpg"></a>
+				<a class="carousel-item"><img src="http://1.bp.blogspot.com/-mGCvuIlMIio/VNKd_OAcRbI/AAAAAAAAH8k/HcADjI4NtgQ/s1600/wall-ex_paisajes-001.jpg"></a>
+				<a class="carousel-item"><img src="http://kedin.es/uploads/event/image/2012/7/6/10/188043/wall_big_paisaje_en_sue_o.jpg"></a>
+				<a class="carousel-item"><img src="http://www.fernandomunoz.com/Blogs/fantaciencia/FANTACIENCIA/PAISAJES02/futuremetrowalle.jpg"></a>
+				<a class="carousel-item"><img src="http://www.austinmonitor.com/wp-content/uploads/2015/11/wall.jpg"></a>
+			</div>
+
+	
+
+	<footer class="page-footer adaptar cyan footer-abajo">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m8 l6">
+					<ul class="grey-text text-lighten-3">
+						<li><h5>Universidad Popular del Cesar</h5></li>
+						<li><b>Dirección:</b> Diagonal 21 # 29–90, barrio Sabanas del Valle</li>
+						<li><b>Telefono (PBX):</b> 5842472</li>
+						<li><b>Correo Electronico: </b>pqrs@unicesar.edu.co</li>
+						<li><b>Horario de Atención:</b> Lunes a Viernes de 8:00am a 12:00m y de 2:00pm a 6:00pm</li>
+						<li>Valledupar - Cesar, Colombia</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container"><a class="white-text" href="http://www.unicesar.edu.co" target="_blank">Unicesar</a> 2016 © Todos los derechos Reservados</div>
+		</div>
+	</footer> 
 <!--Script-->
-<script src="js/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.min.js"></script>
+<script>
+	$(document).ready(function(){
+      $('.carousel').carousel();
+      $('.carousel.carousel-slider').carousel({full_width: true});
+    });
+</script>
 </body>
 </html>
